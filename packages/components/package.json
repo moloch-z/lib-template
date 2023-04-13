@@ -1,0 +1,27 @@
+{
+  "name": "@m/components",
+  "version": "2.0.1",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "node --loader ts-node/esm ../../build/build.ts"
+  },
+  "exports": {
+    ".": {
+      "require": "./lib/index.js",
+      "import": "./lib/index.mjs"
+    },
+    "./es": "./lib/index.mjs",
+    "./lib": "./lib/index.js",
+    "./*": "./*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "vue": "^3.2.47",
+    "@m/utils": "workspace:^"
+  }
+}
